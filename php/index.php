@@ -5,41 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <!-- <link rel="stylesheet" href="./css/about-me.css"> -->
-    <link rel="stylesheet" href="./css/mydreams.css">
-    <!-- <link rel="stylesheet" href="css/mypassions.css">
-    <link rel="stylesheet" href="#cv">
-    <link rel="stylesheet" href="css/style.css">
-</head> -->
+    <title></title>
+</head>
 
 <body>
-
-<?php include './includes/header.html'; ?>
-
-<?php include './includes/nav.html'; ?>
+  
 
 <?php
 if (isset ($_GET['sana'])){
-        $url = $_GET['sana'];
-       
-    if ($url === 'about-me.html') {
-      include './includes/about-me.html';
-    } else if ($url === 'my-dreams.html') {
-        include './includes/my-dreams.html';
-    } else if ($url === 'my-passions.html') {
-        include './includes/my-passions.html';
-    }
-      
-    else {
+        switch($_GET['sana']){
+            case'1':
+                include './includes/about-me.html';
+                break;
+                case'2':
+                    include './includes/my-dreams.html';
+                    break;
+                    case'3':
+                        include './includes/my-passions.html';
+                        break;
+
+        }
+    }else {
         include './includes/index.html';
 }
-}
+
 
  
 ?>
 
-<?php include './includes/footer.html'; ?>
+
 
 
 
