@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="css/about-me.css">
-    <link rel="stylesheet" href="css/my-dreams.css">
-    <link rel="stylesheet" href="css/my-passions.css">
+    <!-- <link rel="stylesheet" href="./css/about-me.css"> -->
+    <link rel="stylesheet" href="./css/mydreams.css">
+    <!-- <link rel="stylesheet" href="css/mypassions.css">
     <link rel="stylesheet" href="#cv">
     <link rel="stylesheet" href="css/style.css">
-</head>
+</head> -->
 
 <body>
 
@@ -31,7 +31,9 @@ if (isset ($_GET['sana'])){
         include './includes/my-passions.html';
     }
       
-    
+    else {
+        include './includes/index.html';
+}
 }
 
  

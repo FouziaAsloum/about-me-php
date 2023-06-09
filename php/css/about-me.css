@@ -1,0 +1,219 @@
+body {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -35px;
+  }
+  
+  
+  .job {
+    color: #e0115f;
+    height: 55px;
+    font-size: 25px;
+  }
+  
+  .des {
+    margin-bottom: 15px;
+  }
+  
+  .des p {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 10px;
+    padding-left: 5%;
+    color: mediumorchid;
+  }
+  
+  
+  /* NAV */
+  
+  
+  nav {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .nav-barre {
+    position: relative;
+    width: calc(100% - 45px);
+    margin: 0 auto;
+    background: #000000;
+    z-index: 1;
+    text-align: center;
+    padding-right: 2%;
+    margin-top: -1%;
+  }
+  
+  .logo {
+    width: 5%;
+    float: left;
+    text-align: left;
+    padding: 10px 25px;
+  }
+  
+  .logo-2 {
+    width: 5%;
+    float: right;
+    text-align: right;
+    padding: 10px 25px;
+  }
+  
+  .menu li {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .menu a {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px 20px;
+    font-size: 15px;
+    line-height: 20px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background: deeppink;
+    color: #fff;
+  }
+  
+  nav:before {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    left: 0;
+  }
+  
+  nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+  }
+  
+            /* H1 */
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #e0115f;
+    margin-top: 1%;
+  }
+  
+  .section{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  
+  
+        /* HARD SKILLS */
+  
+  .hard-skills{
+    margin-left: -45%;
+      margin-top: 0%;
+      background-color: thistle;
+      width: 30%;
+      padding-left: 3%;
+  }
+  
+  .hard-skills h2{
+    height: 20px;
+  }
+  
+  .hard-skills ul{
+    padding-left: 0;
+  }
+  
+  .hard-skills li{
+    list-style: none;
+  }
+  
+        /* SOFT SKILLS */
+  
+  .soft-skills{
+    margin-left: 40%;
+    margin-top: -5%;
+    background-color: orchid;
+  }
+  
+  .soft-skills li{
+    list-style: none;
+  }
+  
+  .soft-skills h2{
+    width: 50%;
+    height: 45px;
+    margin-left: 10%;
+  }
+  
+  
+        /* SKILLS */
+  
+  .skills{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: -25%;
+    margin-top: -5%;
+  }
+  
+  .skills h2{
+    display: flex;
+    justify-content: center;
+    background-color: #e495e4;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: thistle;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #e495e4;
+  }
+  
+  tbody {
+    background-color: orchid;
+  }
+  
+  table th{
+    background-color: whitesmoke;
+  }
+  
+  
+  
+        /* FOOTER */
+  
+  .media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+  }
+  
+  footer{
+    background-color: #000000;
+    border-radius: 20px;
+  }

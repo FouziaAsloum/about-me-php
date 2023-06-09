@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+body {
+  padding: 20px;
+  background-image: url(../images/dream.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Baskervville', serif;
+  padding-bottom: 0;
+}
+
+body p, li{
+  font-weight: bold;
+  color: black;
+  
+  list-style: none;
+  line-height: 30px;
+}
+
+body h2{
+  color: blue;
+}
+
+body h1{
+  color: blue;
+}
+
+      /* HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -35px;
+}
+
+
+.job {
+  height: 55px;
+  font-size: 25px;
+}
+
+.job p{
+  color: blue;
+}
+
+.des {
+  margin-bottom: 15px;
+}
+
+.des p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10px;
+  padding-left: 5%;
+}
+
+
+/* NAV */
+
+
+nav {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.nav-barre {
+  position: relative;
+  width: calc(100% - 45px);
+  margin: 0 auto;
+  background: #000000;
+  z-index: 1;
+  text-align: center;
+  padding-right: 2%;
+  margin-top: -1%;
+}
+
+.logo {
+  width: 5%;
+  float: left;
+  text-align: left;
+  padding: 10px 25px;
+}
+
+.logo-2 {
+  width: 5%;
+  float: right;
+  text-align: right;
+  padding: 10px 25px;
+}
+
+.menu li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.menu a {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 15px 20px;
+  font-size: 15px;
+  line-height: 20px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: blue;
+  color: #fff;
+}
+
+nav:before {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-right: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 0;
+}
+
+nav:after {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  right: 0;
+}
+
+
+
+      /* SECTION */
+
+
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.perso{
+  margin-right: 40%;
+}
+
+ol{
+  padding-left: 0;
+}
+
+ul{
+  padding-left: 0;
+}
+
+
+.engagement{
+  margin-left: 50%;
+}
+
+.engagement li{
+  color: #fff;
+}
+
+
+      /* FOOTER */
+
+footer{
+  background-color: #000000;
+  border-radius: 25px;
+  width: 254px;
+  margin-left: 40%;
+}
+
+.media{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3%;
+  width: 254px;
+}
